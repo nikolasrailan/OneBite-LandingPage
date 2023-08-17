@@ -12,48 +12,52 @@
 </head>
 <body>
   <header>
-    <img src="img/logo.svg" alt="Tom's Jazz School">
-    <nav class="mt-1 mx-auto">
-      <a href="">Inicio</a>
-      <a href="">Cursos</a>
-      <a href="">Eventos</a>
-      <a href="">Contato</a>
-    </nav>
-    <a href="" class="button mt-1 mx-auto mb-1">Se inscreva</a>
+    <div class="container">
+      <img src="img/logo.svg" alt="Tom's Jazz School">
+      <nav>
+        <a href="">Inicio</a>
+        <a href="">Cursos</a>
+        <a href="">Eventos</a>
+        <a href="">Contato</a>
+      </nav>
+      <a href="" class="button mt-1 mx-auto mb-1">Se inscreva</a>
+    </div>
   </header>
 
   <main>
     <section class="hero-section">
-      <img src="img/hero-img.svg" alt="banda de jazz tocando">
-      
-      <div>
-        <h1 class="mt-2">Crie Algo <span class="text-primary decoration">impactante</span> com música</h1>
-        <p class="mt-2 mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim culpa dolore dicta cupiditate fugit quaerat at laborum dolores iste accusamus deserunt sapiente repudiandae, asperi</p>
-        <a href="" class="button">Comece agora</a>
+      <div class="container row-reverse">
+        <img src="img/hero-img.svg" alt="banda de jazz tocando">
+        
+        <div>
+          <h1 class="mt-2">Crie Algo <span class="text-primary decoration">impactante</span> com música</h1>
+          <p class="mt-2 mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim culpa dolore dicta cupiditate fugit quaerat at laborum dolores iste accusamus deserunt sapiente repudiandae, asperi</p>
+          <a href="" class="button">Comece agora</a>
+        </div>
       </div>
     </section>
 
     <section class="courses-section">
       <div class="cards">
-        <article>
+        <article class="card">
           <img src="img/piano.png" alt="Icone tecla de piano">
           <strong>Piano Popular</strong>
           <p>Lorem ipsum dolor sit amet consectetur adipisic  ing elit. Quia, excepturi nobis.</p>
           <a href=""><img src="img/arrow-right.svg" alt="Ir para piagina do curso"></a>
         </article>
-        <article>
+        <article class="card">
           <img src="img/clef.png" alt="Icone da clave de sol">
           <strong>Teoria musical</strong>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, excepturi nobis.</p>
           <a href=""><img src="img/arrow-right.svg" alt="Ir para piagina do curso"></a>
         </article>
-        <article>
+        <article class="card">
           <img src="img/sax.png" alt="Icone de saxofone">
           <strong>Sax Alto</strong>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, excepturi nobis.</p>
           <a href=""><img src="img/arrow-right.svg" alt="Ir para piagina do curso"></a>
         </article>
-        <article>
+        <article class="card">
           <img src="img/drums.png" alt="Icone de bateria">
           <strong>Bateria</strong>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, excepturi nobis.</p>
@@ -61,26 +65,29 @@
         </article>
       </div>
 
-      <h2>E <span class="text-primary">vários</span> outros!</h2>
-      <a href="" >Conhecer os cursos</a>
+      <h2 class="text-center">E <span class="text-primary">vários</span> outros!</h2>
+      <a href=""  class="button mt-2 mx-auto">Conhecer cursos</a>
     </section>
   </main>
 
   <footer>
-    <div>
-      <img src="img/logo.svg" alt="Tom's Jazz School">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="container">
+      <div class="about-column">
+        <img src="img/logo.svg" alt="Tom's Jazz School" class="mt-1 mb-1">
+        <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <nav class="mb-2">
+        <a href="">Inicio</a>
+        <a href="">Cursos</a>
+        <a href="">Eventos</a>
+        <a href="">Contato</a>
+      </nav>
+      <form class="newsletter-form">
+        <label for="email" class="mb-1">Receba materiais gratuitos no seu email</label>
+        <input type="text" class="mb-1" name="email" id="email" placeholder="Digite seu email">
+        <button class="button mb-2">Quero receber</button>
+      </form>
     </div>
-    <nav>
-      <a href="">Inicio</a>
-      <a href="">Cursos</a>
-      <a href="">Eventos</a>
-      <a href="">Contato</a>
-    </nav>
-    <form>
-      <label for="email">Receba materiais gratuitos no seu email</label>
-      <input type="text" name="email" id="email" placeholder="Digite seu email">
-    </form>
   </footer>
 </body>
 </html>
